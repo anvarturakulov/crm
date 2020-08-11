@@ -121,7 +121,7 @@
     padding-bottom: 10px;
 }
 
-input{
+.deals__filter input{
     width: 100%;
     height: 32px;
     border: 0.5px solid rgba(0, 0, 0, 0.12);
@@ -424,6 +424,233 @@ select{
     
 
 }
+
+
+.deal__cart{
+    display: flex;
+}
+
+.deals__aside{
+    width: 340px;
+    background-color: #ECEFF4;
+    select{
+        height: 28px;
+        font-size: 13px;
+        line-height: 18px;
+        width: 210px;
+        option{
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}
+
+.aside__responsible,
+.aside__dealname-tegbox,
+.aside__dealname-status,
+.aside__dealname-budjet,
+.aside__info-marka,
+.aside__info-model,
+.aside__info-year,
+.aside__info-vin,
+.aside__info-adres,
+.aside__info-city,
+.aside__info-service,
+.aside__info-zapis,
+.aside__info-sms,
+.aside__info-sms,
+.aside__person-name,
+.aside__person-fio,
+.aside__person-surname,
+.aside__person-phone,
+.aside__person-otherphone,
+.aside__person-mail,
+.aside__person-adress,
+.aside__person-gender,
+.aside__person-promo,
+.aside__person-add{
+    display: flex;
+    align-items: center;
+}
+
+.aside-caption{
+    width: 100px;
+    height: 28px;
+    font-size: 11px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.6);;
+    padding: 7px 0px 6px;
+}
+.mini-text{
+    font-size: 11px;
+    line-height: 15px;
+}
+.text{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.aside__responsible{
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 12px 15px 11px;
+    
+    .text{
+        margin-left: 8px;
+        color: #6081D2;
+
+    }
+}
+.box{
+    display: flex;
+    align-items: flex-end;
+}
+
+.title-blue{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+}
+.aside__dealname{
+    padding: 15px 15px 1px 15px;
+    border-bottom: 1px solid #dfe6f6;
+}
+.title-blue{
+    font-size: 17px;
+    line-height: 23px;
+    color: #6081D2;
+    margin-bottom: 10px;
+}
+
+.mini-title{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-right: 10px;
+}
+.mini-title-teg{
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-right: 4px;
+    background: linear-gradient(180deg, #6081D2 0%, #4362AD 100%);
+    border-radius: 4px;
+    height: 17px;
+    padding: 1px 5px 2px 5px;
+}
+.aside__dealname-tegbox,
+.aside__dealname-status{
+    margin-bottom: 13px;
+    align-items: center;
+}
+
+.mini-title-red{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background: #DB4661;
+    border-radius: 2px;
+    height: 17px;
+    padding: 0px 10px;
+}
+
+.aside__dealname-budjet-sum{
+    font-size: 13px;
+    line-height: 18px;
+    color: #DB4661;
+}
+
+.aside__info{
+    padding: 15px 15px 1px 15px;
+    border-bottom: 1px solid #dfe6f6;
+}
+
+.aside__info-marka,
+.aside__info-model,
+.aside__info-year,
+.aside__info-vin,
+.aside__info-adres,
+.aside__info-city,
+.aside__info-service{
+    margin-bottom: 4px;
+}
+
+
+.aside__info-zapis,
+.aside__info-vin,
+.aside__info-adres,
+.aside__person-otherphone,
+.aside__person-mail,
+.aside__person-adress,
+.aside__person-promo,
+.aside__person-add{
+    input{
+        width: 210px;
+        height: 28px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        text-indent: 10px;
+        color: rgba(0, 0, 0, 0.75);
+        border: 0.5px solid rgba(0, 0, 0, 0.12);
+        padding: 0px 7px 0px 3px;
+        outline: none;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+}
+
+.aside__info-adres{
+    input{
+        font-weight: 300;
+    }
+}
+.aside__info-zapis{
+    margin-bottom: 8px;
+}
+
+.aside__info-sms,
+.aside__info-video,
+.aside__info-installment{
+    display: flex;
+    justify-content: space-between;
+    label{
+        font-size: 11px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+.aside__info-sms,
+.aside__info-video{
+    margin-bottom: 5px;
+}
+
+.aside__person{
+    padding: 15px 15px 0px 15px;
+}
+
+.aside__person-name{
+    display: flex;
+    justify-content: space-between;
+    .arrow{
+        transform: rotate(180deg);
+    }
+}
+
+.aside__person-fio,
+.aside__person-surname,
+.aside__person-phone,
+.aside__person-otherphone,
+.aside__person-mail,
+.aside__person-adress,
+.aside__person-gender,
+.aside__person-promo{
+    margin-bottom: 4px;
+}
+
 
 @import 'media';
 //end present box
