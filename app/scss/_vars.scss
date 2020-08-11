@@ -1,0 +1,16 @@
+
+$label:rgba(0, 0, 0, 0.6);
+$text:rgba(0, 0, 0, 0.75);
+$darktext:rgba(255, 255, 255, 0.75);
+$blue:#6081D2;
+$red:#DB4661;
+$green:#2DA771;
+$yellow:#F3D56A;
+$bg:#f8f8f8;
+
+@mixin ibg{
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+

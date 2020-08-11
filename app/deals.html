@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Яратган эгамга мингдан минг шукур булсин  -->
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <div class="header__menubox">
+                    <div class="header__logo">
+                        <div class="header__logo-img"></div>
+                        <div class="header__logo-text">Автомоторз Сервис</div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Сделки</a></li>
+                            <li><a href="#">Списки</a></li>
+                            <li><a href="#">Документация</a></li>
+                            <li><a href="#">Задачи</a></li>
+                            <li><a href="#">Аналитика</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__userbox">
+                    <div class="header__userbox-name">Привет, <span>Матвей</span></div>
+                    <div class="header__userbox-img" style="background-image: url(/images/user.png);"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="content__inner">
+                
+                <div class="title-box">
+                    <div class="title-box__inner">
+                        <div class="title-big">Сделки</div>
+                        <a href="#" class="btn">Добавить сделку</a>
+                    </div>
+                </div>  
+
+                <div class="deals__filter">
+                    <form>
+                        <div class="deals__name search__ico">
+                            <div class="title">Название</div>
+                            <input type="text" class="deals__name-input padding__ico">
+                        </div>
+                        <div class="deals__client">
+                            <div class="title">Клиент</div>
+                            <input type="text" class="deals__client-input">
+                        </div>
+                        <div class="deals__city">
+                            <div class="title">Город</div>
+                            <select class="deals__city-select"></select>
+                        </div>
+                        <div class="deals__status">
+                            <div class="title">Статус</div>
+                            <input type="text" class="deals__status-input">
+                        </div>
+                        <div class="deals__task">
+                            <div class="title">Задача</div>
+                            <input type="text" class="deals__task-input no__active__input">
+                        </div>
+                        <div class="deals__byudjet search__ico">
+                            <div class="title">Бюджет</div>
+                            <input type="text" class="deals__byudjet-input">
+                        </div>
+                        <div class="deals__date">
+                            <div class="title">Дата изменений</div>
+                            <input type="text" class="deals__date-input no__active__input">
+                        </div>
+                        <div class="deals__view">
+                            <div class="title"></div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="deals__list">
+                    <div class="deals__item">
+                        <div class="deals__name vert-center">
+                            <div class="text">Афанасий, фары</div>
+                        </div>
+                        <div class="deals__client">
+                            <div class="text">Афанасий</div>
+                            <a href="tel:79991234567" class="phone">79991234567</a>
+                            <a href="mailto:afanasiy@domain.com" class="mail">afanasiy@domain.com</a>
+                        </div>
+                        <div class="deals__city vert-center">
+                            <div class="text">Санкт-Петербург</div>
+                        </div>
+                        <div class="deals__status vert-center">
+                            <div class="text bgcol-green">Не участвует в расчётах</div>
+                        </div>
+                        <div class="deals__task vert-center">
+                            <div class="text">Звонок до 20.04.2020 11:00</div>
+                        </div>
+                        <div class="deals__byudjet vert-center">
+                            <div class="text">1200</div>
+                        </div>
+                        <div class="deals__date vert-center">
+                            <div class="text">16.04.2020 15:10</div>
+                        </div>
+                        <div class="deals__view vert-center">
+                            <div class="ico"></div>
+                        </div>
+                    </div>
+
+                    <div class="deals__item item__two">
+                        <div class="deals__name vert-center">
+                            <div class="text">Валерия, замена ГРМ</div>
+                        </div>
+                        <div class="deals__client">
+                            <div class="text">Валерия</div>
+                            <a href="tel:79997654321" class="phone">79997654321</a>
+                            <a href="mailto:valeriya@domain.com" class="mail">valeriya@domain.com</a>
+                        </div>
+                        <div class="deals__city vert-center">
+                            <div class="text">Комсомольск-на-Амуре</div>
+                        </div>
+                        <div class="deals__status vert-center">
+                            <div class="text bgcol-green">Передан СТО</div>
+                        </div>
+                        <div class="deals__task vert-center">
+                            <div class="text">Звонок до 16.04.2020 18:00</div>
+                        </div>
+                        <div class="deals__byudjet vert-center">
+                            <div class="text">700</div>
+                        </div>
+                        <div class="deals__date vert-center">
+                            <div class="text">15.04.2020 12:35</div>
+                        </div>
+                        <div class="deals__view vert-center">
+                            <div class="ico"></div>
+                        </div>
+                    </div>
+
+                    <div class="deals__item">
+                        <div class="deals__name vert-center">
+                            <div class="text">Михаил, масло</div>
+                        </div>
+                        <div class="deals__client">
+                            <div class="text">Михаил</div>
+                            <a href="tel:79993215476" class="phone">79993215476</a>
+                        </div>
+                        <div class="deals__city vert-center">
+                            <div class="text">Владикавказ</div>
+                        </div>
+                        <div class="deals__status vert-center">
+                            <div class="text bgcol-green">Клиент думает</div>
+                        </div>
+                        <div class="deals__task vert-center">
+                            <div class="text">СМС напоминание 28.04.2020 12:00</div>
+                        </div>
+                        <div class="deals__byudjet vert-center">
+                            <div class="text">1400</div>
+                        </div>
+                        <div class="deals__date vert-center">
+                            <div class="text">15.04.2020 09:46</div>
+                        </div>
+                        <div class="deals__view vert-center">
+                            <div class="ico"></div>
+                        </div>
+                    </div>
+
+                    <div class="deals__item item__two">
+                        <div class="deals__name vert-center">
+                            <div class="text">Олег, консульт</div>
+                        </div>
+                        <div class="deals__client">
+                            <div class="text">Олег</div>
+                            <a href="tel:79995673412" class="phone">79995673412</a>
+                            <a href="mailto:oleg@domain.com" class="mail">oleg@domain.com</a>
+                        </div>
+                        <div class="deals__city vert-center">
+                            <div class="text">Красногорск</div>
+                        </div>
+                        <div class="deals__status vert-center">
+                            <div class="text bgcol-green">Получен контакт</div>
+                        </div>
+                        <div class="deals__task vert-center">
+                            <div class="text">Звонок до 20.04.2020 11:00</div>
+                        </div>
+                        <div class="deals__byudjet vert-center">
+                            <div class="text">900</div>
+                        </div>
+                        <div class="deals__date vert-center">
+                            <div class="text">15.04.2020 19:12</div>
+                        </div>
+                        <div class="deals__view vert-center">
+                            <div class="ico"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="deals__footer">
+                    <div class="deals__footer-inputbox">
+                        <div class="deals__footer-info">Записи с 1 по 10 из 56</div>
+                        <div class="deals__footer-text">Записей на страницу</div>
+                        <form>
+                            <!-- <input type="text" class="deals__footer-input"> -->
+                            <select>
+                                <option value="p1">1</option>
+                                <option value="p2">2</option>
+                                <option value="p3">3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="deals__footer-paginations">
+                        <ul>
+                            <li><a href="#" class="arrow-left"></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#" class="arrow-right"></a></li>
+                        </ul> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+   
+  
+
+ 
