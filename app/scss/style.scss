@@ -430,7 +430,7 @@ select{
     display: flex;
 }
 
-.deals__aside{
+.deal__leftside{
     width: 340px;
     background-color: #ECEFF4;
     select{
@@ -445,35 +445,35 @@ select{
     }
 }
 
-.aside__responsible,
-.aside__dealname-tegbox,
-.aside__dealname-status,
-.aside__dealname-budjet,
-.aside__info-marka,
-.aside__info-model,
-.aside__info-year,
-.aside__info-vin,
-.aside__info-adres,
-.aside__info-city,
-.aside__info-service,
-.aside__info-zapis,
-.aside__info-sms,
-.aside__info-sms,
-.aside__person-name,
-.aside__person-fio,
-.aside__person-surname,
-.aside__person-phone,
-.aside__person-otherphone,
-.aside__person-mail,
-.aside__person-adress,
-.aside__person-gender,
-.aside__person-promo,
-.aside__person-add{
+.leftside__responsible,
+.leftside__dealname-tegbox,
+.leftside__dealname-status,
+.leftside__dealname-budjet,
+.leftside__info-marka,
+.leftside__info-model,
+.leftside__info-year,
+.leftside__info-vin,
+.leftside__info-adres,
+.leftside__info-city,
+.leftside__info-service,
+.leftside__info-zapis,
+.leftside__info-sms,
+.leftside__info-sms,
+.leftside__person-name,
+.leftside__person-fio,
+.leftside__person-surname,
+.leftside__person-phone,
+.leftside__person-otherphone,
+.leftside__person-mail,
+.leftside__person-adress,
+.leftside__person-gender,
+.leftside__person-promo,
+.leftside__person-add{
     display: flex;
     align-items: center;
 }
 
-.aside-caption{
+.leftside-caption{
     width: 100px;
     height: 28px;
     font-size: 11px;
@@ -491,7 +491,7 @@ select{
     line-height: 18px;
 }
 
-.aside__responsible{
+.leftside__responsible{
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.04);
     padding: 12px 15px 11px;
@@ -512,7 +512,7 @@ select{
     font-size: 17px;
     line-height: 23px;
 }
-.aside__dealname{
+.leftside__dealname{
     padding: 15px 15px 1px 15px;
     border-bottom: 1px solid #dfe6f6;
 }
@@ -539,8 +539,8 @@ select{
     height: 17px;
     padding: 1px 5px 2px 5px;
 }
-.aside__dealname-tegbox,
-.aside__dealname-status{
+.leftside__dealname-tegbox,
+.leftside__dealname-status{
     margin-bottom: 13px;
     align-items: center;
 }
@@ -556,36 +556,36 @@ select{
     padding: 0px 10px;
 }
 
-.aside__dealname-budjet-sum{
+.leftside__dealname-budjet-sum{
     font-size: 13px;
     line-height: 18px;
     color: #DB4661;
 }
 
-.aside__info{
+.leftside__info{
     padding: 15px 15px 1px 15px;
     border-bottom: 1px solid #dfe6f6;
 }
 
-.aside__info-marka,
-.aside__info-model,
-.aside__info-year,
-.aside__info-vin,
-.aside__info-adres,
-.aside__info-city,
-.aside__info-service{
+.leftside__info-marka,
+.leftside__info-model,
+.leftside__info-year,
+.leftside__info-vin,
+.leftside__info-adres,
+.leftside__info-city,
+.leftside__info-service{
     margin-bottom: 4px;
 }
 
 
-.aside__info-zapis,
-.aside__info-vin,
-.aside__info-adres,
-.aside__person-otherphone,
-.aside__person-mail,
-.aside__person-adress,
-.aside__person-promo,
-.aside__person-add{
+.leftside__info-zapis,
+.leftside__info-vin,
+.leftside__info-adres,
+.leftside__person-otherphone,
+.leftside__person-mail,
+.leftside__person-adress,
+.leftside__person-promo,
+.leftside__person-add{
     input{
         width: 210px;
         height: 28px;
@@ -602,18 +602,18 @@ select{
     }
 }
 
-.aside__info-adres{
+.leftside__info-adres{
     input{
         font-weight: 300;
     }
 }
-.aside__info-zapis{
+.leftside__info-zapis{
     margin-bottom: 8px;
 }
 
-.aside__info-sms,
-.aside__info-video,
-.aside__info-installment{
+.leftside__info-sms,
+.leftside__info-video,
+.leftside__info-installment{
     display: flex;
     justify-content: space-between;
     label{
@@ -623,35 +623,212 @@ select{
     }
 }
 
-.aside__info-sms,
-.aside__info-video{
+.leftside__info-sms,
+.leftside__info-video{
     margin-bottom: 5px;
 }
 
-.aside__person{
+.leftside__person{
     padding: 15px 15px 0px 15px;
 }
 
-.aside__person-name{
+.leftside__person-name{
     display: flex;
     justify-content: space-between;
-    .arrow{
-        transform: rotate(180deg);
-    }
+    
 }
 
-.aside__person-fio,
-.aside__person-surname,
-.aside__person-phone,
-.aside__person-otherphone,
-.aside__person-mail,
-.aside__person-adress,
-.aside__person-gender,
-.aside__person-promo{
+.arrow-down{
+    transform: rotate(180deg);
+}
+
+.leftside__person-fio,
+.leftside__person-surname,
+.leftside__person-phone,
+.leftside__person-otherphone,
+.leftside__person-mail,
+.leftside__person-adress,
+.leftside__person-gender,
+.leftside__person-promo{
     margin-bottom: 4px;
 }
 
+.leftside__person-add{
+    input{
+        background-color: #e3e5ea;
+    }
+}
 
+.leftside__person-name{
+    cursor: pointer;
+}
+.deal__cart{
+    display: flex;
+}
+
+.deal__middleside{
+    width: 100%;
+    height: 846px;
+    display: flex;
+	flex-direction: column;
+    min-height: 100%;   
+    background-color: #f7f7f7;
+}
+
+.deal__middleside-content {
+	flex: 1 0 auto;
+}
+.deal__middleside-footer {
+	flex: 0 0 auto;
+}
+
+.deal__rightside{
+    width: 300px;
+    height: 846px;   
+}
+
+.task__item{
+    margin-top: 20px;
+}
+
+.task__titlebox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.task__titlebox-title{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.task__titlebox-datetime{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.deal__middleside{
+    padding: 0px 15px 15px 15px;
+}
+
+.task__contentbox{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+.task-text{
+    font-size: 13px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 8px;
+}
+
+.action__list{
+    display: none;
+    position: absolute;
+    top: -166px;
+    left: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 3px 0px;
+    li{
+        a{
+            font-size: 13px;
+            line-height: 18px;
+            color: rgba(0, 0, 0, 0.75);
+            padding: 7px 10px;
+            
+        }
+        &:hover{
+            background: #ECEFF4;
+        }
+    }
+    .active-action{
+        color: #6081D2;
+    }
+}
+
+.action{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+}
+
+.action__box{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 12px 15px 5px 15px;
+}
+
+.action__type{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #6081D2;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.action__typebox{
+    display: flex;
+    align-items: center;
+}
+
+.action__datetime,
+.action__for{
+    margin-left: 20px;
+    font-size: 11px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    span{
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #6081D2;
+    }
+}
+
+.action__value{
+    display: flex;
+}
+
+.action__comment{
+    margin-top: 8px;
+    margin-bottom: 12px;
+    textarea{
+        width: 100%;
+        height: 66px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 18px;
+        text-indent: 15px;
+        border: none;
+    }
+}
+
+.action__commentbox{
+    position: relative;
+}
+
+.action-btn{
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+    width: 100px;
+    height: 32px;
+}
 @import 'media';
 //end present box
 
