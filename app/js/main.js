@@ -20,8 +20,13 @@ $(function(){
         };
       });
        
-      $('.action__type').on('click',function(){
+    $('.action__type').on('click',function(){
         $('.action__list').slideToggle();
-        }); 
-      
+    }); 
+        
+    $('.deal__rightside-show-btn').on('click',function(){
+        $('.deal__rightside').toggleClass('width-zero');
+        $('.ico-show-btn').toggleClass('rotate__180');
+    }); 
+
 });
