@@ -640,6 +640,24 @@ select{
 
 .arrow-down{
     transform: rotate(180deg);
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+
+.arrow-down-right{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 20px;
+    right: 22px;
+}
+
+.rightside__work-name,
+.rightside__avtorepair-name,
+.rightside__account-name,
+.rightside__answer-name,
+.leftside__person-name{
+    position: relative;
 }
 
 .leftside__person-fio,
@@ -1040,6 +1058,46 @@ select{
 
 .pag__next-btn{
     margin-right: 8px;
+}
+
+.arrow__work,
+.arrow__avtorepair,
+.arrow__account,
+.arrow__answer{
+    cursor: pointer;
+}
+
+.edit__history-box{
+    padding: 53px 20px 20px 8px;
+}
+
+.edit__history-titlebox{
+    display: flex;
+    align-items: center;
+}
+
+.edit__history-author{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: #6081D2;
+    margin-right: 4px;
+}
+
+.edit__history-datetime{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.edit__history-text{
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 2px 5px;
+    background: rgba(0, 0, 0, 0.04);
 }
 @import 'media';
 //end present box
