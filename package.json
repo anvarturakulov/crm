@@ -9,6 +9,8 @@
   "author": "Anvar Turakulov",
   "license": "ISC",
   "dependencies": {
+    "@fullcalendar/core": "^5.2.1",
+    "@fullcalendar/resource-timeline": "^5.2.0",
     "browser-sync": "^2.26.7",
     "cssmin": "^0.4.3",
     "gulp": "^4.0.2",

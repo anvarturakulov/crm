@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Яратган эгамга мингдан минг шукур булсин  -->
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <div class="header__menubox">
+                    <div class="header__logo">
+                        <div class="header__logo-img"></div>
+                        <div class="header__logo-text">Автомоторз Сервис</div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Сделки</a></li>
+                            <li><a href="#">Списки</a></li>
+                            <li><a href="#">Документация</a></li>
+                            <li><a href="#">Задачи</a></li>
+                            <li><a href="#">Аналитика</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__userbox">
+                    <div class="header__userbox-name">Привет, <span>Матвей</span></div>
+                    <div class="header__userbox-img" style="background-image: url(/images/user.png);"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="content__inner">
+                <div class="custom__inner">
+                    
+                    <div class="title-box">
+                        <div class="title-box__inner">
+                            <div class="title-big">Настройки</div>
+                        </div>
+                    </div>
+
+                    <div class="tab-section">
+                        <div class="tab-horiz">
+                            <button class="tablinks-horiz" onclick="openHoriz(event, 'horiz-main')" id="defaultOpen">Основные</button>
+                            <button class="tablinks-horiz" onclick="openHoriz(event, 'horiz-sales')">Воронки продаж</button>
+                            <button class="tablinks-horiz" onclick="openHoriz(event, 'horiz-add')">Дополнительные поля</button>
+                            <button class="tablinks-horiz" onclick="openHoriz(event, 'horiz-script')">Скрипт</button>
+                        </div>
+
+                        <div id="horiz-main" class="tabcontent-horiz">
+                            <div class="tab-caption">Адрес CRM</div>
+                            <input type="text" class="tab__input" placeholder="Введите текст">
+                            
+                            <div class="tab-caption">Название компании</div>
+                            <input type="text" class="tab__input" placeholder="Автомоторз Сервис">
+
+                            <div class="tab-caption">Lead Info</div>
+                            <textarea class="tab-textarea" name="" id="" cols="30" rows="8" placeholder="В CRM реализована возможность отправки SMS и WhatsApp сообщений; 
+    Добавлен раздел “Инстанция”. Заполнение обязательно!"></textarea>
+                            <div class="tab-btn-save">
+                                <a href="#" class="btn">Сохранить</a>
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="horiz-sales" class="tabcontent-horiz">
+                            <div class="vertical__inner">
+                                <div class="tab-vertical">
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-voronka1')" id="defaultOpen">Воронка 1</button>
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-voronka111')">Воронка 111</button>
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-voronka2')">Воронка 2</button>
+                                    <a href="#" class="btn">Добавить воронку</a>
+                                </div>
+                                <div class="tabcontent-vertical-box">
+                                    <div id="ver-voronka1" class="tabcontent-vertical">
+                                        <div class="voronka__list">
+                                            <div class="voronka__list-item fw-bold">
+                                                <div class="voronka__number">№</div>
+                                                <div class="voronka__name">Название</div>
+                                                <div class="voronka__color">Цвет</div>
+                                                <div class="voronka__ico"></div>
+                                            </div>
+                                            <div class="voronka__list-item bg-grey">
+                                                <div class="voronka__number">104</div>
+                                                <div class="voronka__name">Получен контакт</div>
+                                                <div class="voronka__color" style="background-color: #EF854F;"></div>
+                                                <div class="voronka__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="voronka__list-item">
+                                                <div class="voronka__number">113</div>
+                                                <div class="voronka__name">В работе</div>
+                                                <div class="voronka__color" style="background-color: #6CECED;"></div>
+                                                <div class="voronka__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="voronka__list-item bg-grey">
+                                                <div class="voronka__number">126</div>
+                                                <div class="voronka__name">Записан на консультацию</div>
+                                                <div class="voronka__color" style="background-color: #7F7F7F;"></div>
+                                                <div class="voronka__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="voronka__list-item">
+                                                <div class="voronka__number">140</div>
+                                                <div class="voronka__name">На подготовке документов</div>
+                                                <div class="voronka__color" style="background-color: #EF854F;"></div>
+                                                <div class="voronka__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="voronka__list-item bg-grey">
+                                                <div class="voronka__number">107</div>
+                                                <div class="voronka__name">Ожидаение материалов</div>
+                                                <div class="voronka__color" style="background-color: #390F7A;"></div>
+                                                <div class="voronka__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="voronka__list-item">
+                                                <div class="voronka__number">142</div>
+                                                <div class="voronka__name">Получены материалы</div>
+                                                <div class="voronka__color" style="background-color: #1C4343;"></div>
+                                                <div class="voronka__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn">Добавить статус</a>
+                                    </div>
+                                    <div id="ver-voronka111" class="tabcontent-vertical">
+                                        Внутри Воронка 1111
+                                    </div>
+                                    <div id="ver-voronka2" class="tabcontent-vertical">
+                                        Внутри Воронка 2
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="horiz-add" class="tabcontent-horiz">
+                            <div class="vertical__inner">
+                                <div class="tab-vertical">
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-sdelki')" id="defaultOpen">Сделки</button>
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-contact')">Контакты</button>
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-company')">Компании</button>
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-doc')">Документы</button>
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-region')">Регионы</button>
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-sms')">Шаблоны SMS/WhatsApp</button>
+                                    <button class="tablinks-vertical" onclick="openVertical(event, 'ver-template')">Шаблоны Документы</button>
+                                    <a href="#" class="btn">Добавить список</a>
+                                </div>
+                                <div class="tabcontent-vertical-box">
+                                    <div id="ver-sdelki" class="tabcontent-vertical">
+                                        <div class="add__list">
+                                            <div class="add__list-item fw-bold">
+                                                <div class="add__number">№</div>
+                                                <div class="add__name">Название</div>
+                                                <div class="add__type">Тип</div>
+                                                <div class="add__param">Параметры</div>
+                                                <div class="add__ico"></div>
+                                            </div>
+                                            <div class="add__list-item bg-grey">
+                                                <div class="add__number">226</div>
+                                                <div class="add__name">Передан в регион</div>
+                                                <div class="add__type">Список</div>
+                                                <div class="add__param">Видимое (не системное)</div>
+                                                <div class="add__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="add__list-item">
+                                                <div class="add__number">204</div>
+                                                <div class="add__name">Город</div>
+                                                <div class="add__type">Текстовое поле</div>
+                                                <div class="add__param">Видимое (не системное)</div>
+                                                <div class="add__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="add__list-item bg-grey">
+                                                <div class="add__number">208</div>
+                                                <div class="add__name">Отправлено видео</div>
+                                                <div class="add__type">Чекбокс</div>
+                                                <div class="add__param">Видимое (не системное)</div>
+                                                <div class="add__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="add__list-item">
+                                                <div class="add__number">209</div>
+                                                <div class="add__name">Предложена рассрочка</div>
+                                                <div class="add__type">Чекбокс</div>
+                                                <div class="add__param">Видимое (не системное)</div>
+                                                <div class="add__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="add__list-item bg-grey">
+                                                <div class="add__number">210</div>
+                                                <div class="add__name">Отправлено SMS</div>
+                                                <div class="add__type">Чекбокс</div>
+                                                <div class="add__param">Видимое (не системное)</div>
+                                                <div class="add__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="add__list-item">
+                                                <div class="add__number">211</div>
+                                                <div class="add__name">Предложена постоплата</div>
+                                                <div class="add__type">Чекбокс</div>
+                                                <div class="add__param">Видимое (не системное)</div>
+                                                <div class="add__ico">
+                                                    <img src="/images/ico/close.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn">Добавить значение</a>
+                                    </div>
+                                    <div id="ver-contact" class="tabcontent-vertical">
+                                        Внутри Контакты
+                                    </div>
+                                    <div id="ver-company" class="tabcontent-vertical">
+                                        Внутри Компании
+                                    </div>
+                                    <div id="ver-doc" class="tabcontent-vertical">
+                                        Внутри Документы
+                                    </div>
+                                    <div id="ver-region" class="tabcontent-vertical">
+                                        Внутри Регионы
+                                    </div>
+                                    <div id="ver-sms" class="tabcontent-vertical">
+                                        Внутри СМС
+                                    </div>
+                                    <div id="ver-template" class="tabcontent-vertical">
+                                        Внутри Шаблоны
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="horiz-script" class="tabcontent-horiz">
+                            <textarea class="tab-textarea" name="" id="" cols="30" rows="20" placeholder="script"></textarea>
+                            <div class="tab-btn-save">
+                                <a href="#" class="btn">Добавить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+   
+  
+
+ 

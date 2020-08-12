@@ -1099,6 +1099,247 @@ select{
     padding: 2px 5px;
     background: rgba(0, 0, 0, 0.04);
 }
+
+.deal__middleside__editor{
+    textarea{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+// Табуляция
+
+.tab-horiz {
+    overflow: hidden;
+   // border: 1px solid #ccc;
+   background: #ECEFF4;
+   border-radius: 8px 8px 0px 0px;
+}
+
+.tab-horiz button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.75);
+}
+  
+.tab-horiz button:hover {
+    background-color: #fff;
+    color: #6081D2;
+    font-weight: 700;
+}
+  
+.tab-horiz button.active {
+    background-color: #fff;
+    color: #6081D2;
+    font-weight: 700;
+}
+  
+.tabcontent-horiz {
+    display: none;
+    padding: 15px 15px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.vertical__inner{
+      display: flex;
+}
+
+  /// Вертикал табуляция
+.tab-vertical {
+   overflow: hidden;
+   min-width: 220px;
+   background: #fff;
+   border-radius: 8px 8px 0px 0px;
+   padding-left: 2px;
+   a{
+       margin-top: 15px;
+   }
+}
+
+.tab-vertical button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 0px;
+    padding-left: 13px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+}
+  
+.tab-vertical button:hover {
+    color: #6081D2;
+    border-left: 2px solid #6081D2;
+    font-weight: 700;
+}
+  
+.tab-vertical button.active {
+    color: #6081D2;
+    border-left: 2px solid #6081D2;
+    font-weight: 700;
+}
+  
+.tabcontent-vertical-box{
+      width: 100%;
+}
+
+.tabcontent-vertical {
+    display: none;
+    padding: 10px 0px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.tab-caption{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px 3px;
+}
+
+.tab__input{
+    width: 100%;
+    height: 32px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    &::placeholder{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 18px;
+        text-indent: 15px;
+        color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+.tab-textarea{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    border-radius: 4px;
+    &::placeholder{
+        font-size: 13px;
+        line-height: 18px;
+        text-indent: 15px;
+        color: #000000;
+    }
+}
+
+.tab-btn-save{
+    margin: 0px auto;
+    margin-top: 12px;
+    a{
+        width: 100px;
+    }
+}
+
+.bg-grey{
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.add__list{
+    margin-bottom: 20px;
+}
+
+.add__list-item{
+    display: flex;
+    width: 100%;
+    
+}
+
+.fw-bold{
+    font-weight: 700;
+
+}
+
+.add__number,
+.add__name,
+.add__type,
+.add__param,
+.add__ico{
+    width: 3%;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 7px 0px;
+}
+
+.add__number{
+    width: 5%;
+    padding-left:10px;
+}
+
+.add__name{
+    width: 51%;
+    margin-left: 20px;
+}
+
+.add__type{
+    width: 13%;
+    margin-left: 20px;
+}
+
+.add__param{
+    width: 22%;
+    margin-left: 20px;
+}
+
+.add__ico{
+    width: 3%;
+    
+}
+
+.voronka__list{
+    margin-bottom: 20px;
+}
+
+.voronka__list-item{
+    display: flex;
+}
+
+.voronka__number,
+.voronka__name{
+    padding: 7px 0px;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.voronka__number{
+    margin-left: 10px;
+    width: 6%;
+}
+
+.voronka__name{
+    margin-left: 20px;
+    width: 75%;
+}
+
+.voronka__color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 9px 0px;
+}
+
+.voronka__ico{
+    margin: 9px 0px 0px 70px;
+}
 @import 'media';
 //end present box
 

@@ -77,4 +77,43 @@ $(function(){
         };
       });
 
+      document.getElementById("defaultOpen").click();
 });
+
+function openHoriz(evt, vkladka) {
+    // Объявить все переменные
+    var i, tabcontent, tablinks;
+    // Получить все элементы с помощью class="tabcontent" и спрятать их
+    tabcontent = document.getElementsByClassName("tabcontent-horiz");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    // Получить все элементы с помощью class="tablinks" и удалить class "active"
+    tablinks = document.getElementsByClassName("tablinks-horiz");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    // Показать текущую вкладку и добавить "active" класс для кнопки, которая открыла вкладку
+    document.getElementById(vkladka).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  function openVertical(evt, vkladka) {
+    // Объявить все переменные
+    var i, tabcontent, tablinks;
+    // Получить все элементы с помощью class="tabcontent" и спрятать их
+    tabcontent = document.getElementsByClassName("tabcontent-vertical");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    // Получить все элементы с помощью class="tablinks" и удалить class "active"
+    tablinks = document.getElementsByClassName("tablinks-vertical");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    // Показать текущую вкладку и добавить "active" класс для кнопки, которая открыла вкладку
+    document.getElementById(vkladka).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  
